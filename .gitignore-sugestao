@@ -1,0 +1,199 @@
+#
+# ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║                                                                           ║
+# ║     ██████╗ █████╗ ███████╗ █████╗                                        ║
+# ║    ██╔════╝██╔══██╗██╔════╝██╔══██╗                                       ║
+# ║    ██║     ███████║███████╗███████║                                       ║
+# ║    ██║     ██╔══██║╚════██║██╔══██║                                       ║
+# ║    ╚██████╗██║  ██║███████║██║  ██║                                       ║
+# ║     ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝                                       ║
+# ║                                                                           ║
+# ║              🗜️  GIT COMPACT v1.0  🗜️                                    ║
+# ║                                                                           ║
+# ║         Compacte seus repositórios Git de forma segura!                   ║
+# ║                                                                           ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+# SUGESTÃO DE .gitignore
+
+# ==========================================
+# IGNORAR REPOSITÓRIOS INTERNOS
+# ==========================================
+# Cada subprojeto já tem seu próprio controle de versão
+**/.git/
+**/.hg/
+**/.svn/
+**/.gitignore
+**/.gitattributes
+**/.hgignore
+**/.svnignore
+
+# ==========================================
+# AMBIENTES VIRTUAIS E DEPENDÊNCIAS
+# ==========================================
+**/py_virtual_env/
+**/py_virtualenv/
+**/win_py_virtualenv/
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+.Python
+piplog.txt
+pipdeletethisdirectory.txt
+**/node_modules/
+**/bower_components/
+**/vendor/
+**/packages/
+**/__pypackages__/
+
+# ==========================================
+# ARQUIVOS COMPILADOS E BUILD
+# ==========================================
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+**/*.py[cod]
+*.so
+*.dylib
+*.class
+*.jar
+*.war
+*.ear
+*.dll
+*.exe
+*.pdb
+*.tlog
+*.nupkg
+*.snupkg
+*.rs.bk
+*.test
+**/bin/
+**/obj/
+**/target/
+**/build/
+**/Build/
+**/dist/
+**/debug/
+**/Debug/
+**/release/
+**/Release/
+**/out/
+
+# ==========================================
+# ARQUIVOS TEMPORÁRIOS
+# ==========================================
+**/*.tmp
+**/*.temp
+**/*.log
+**/*.cache
+**/tmp/
+**/temp/
+**/cache/
+**/*cache*/
+**/log/
+**/logs/
+**/downloads/
+.tmp
+.temp
+.cache
+.log
+*.stackdump
+
+# ==========================================
+# ARQUIVOS DE SISTEMA
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*~
+.Trash-*
+
+# ==========================================
+# IDEs E EDITORES
+# ==========================================
+# .vscode/
+# .idea/
+*.swp
+*.swo
+# .vs/
+*.suo
+*.user
+**/.vs/**/FileContentIndex/
+**/.vs/**/copilot-chat/
+**/.vs/**/ProjectEvaluation/
+**/.vs/**/Cache/
+**/.vs/**/Backup/
+**/*.nuget/
+.ipynb_checkpoints
+
+# ==========================================
+# SECRETS E CONFIGURAÇÕES SENSÍVEIS
+# ==========================================
+# **/.env
+# **/.env.*
+# !**/.env.example
+# **/*.key
+# **/*.pem
+# **/*.crt
+# **/secrets.yml
+
+# ==========================================
+# LOCK FILES DE DEPENDÊNCIAS
+# ==========================================
+**/package-lock.json
+**/packagelock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+**/pnpmlock.yaml
+**/Cargo.lock
+**/Gemfile.lock
+**/composer.lock
+**/Pipfile.lock
+**/poetry.lock
+**/go.work
+**/go.work.sum
+
+# ==========================================
+# BANCOS DE DADOS LOCAIS
+# ==========================================
+# **/*.sqlite
+# **/*.sqlite3
+# **/*.db
+
+# ==========================================
+# ARQUIVOS DE TESTE E COBERTURA
+# ==========================================
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/.nyc_output/
+**/coverage/
+**/.mypy_cache/
+
+# ==========================================
+# LOGS DE DEBUG
+# ==========================================
+npmdebug.log*
+yarndebug.log*
+yarnerror.log*
+lernadebug.log*
+.pnpmdebug.log*
+
+# ==========================================
+# ARQUIVOS COMPRIMIDOS
+# ==========================================
+# **/*.zip
+# **/*.tar
+# **/*.tar.gz
+# **/*.rar
+# **/*.7z
